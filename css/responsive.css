@@ -1,0 +1,106 @@
+/* 1) Tablet & Small Laptop (<= 800px)
+   2) Phones (<= 500px)
+   3) Mobile hamburger (<= 800px)
+*/
+
+
+/*  1) Tablet & Small Laptop (<= 800px)  */
+@media (max-width: 800px) {
+  /* General spacing */
+  header, footer, article, main, .layout {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  /* Nav goes vertical */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  article, main { padding: 10px; }
+
+  /* Figures scale better */
+  figure {
+    max-width: 100%;
+    margin: 16px 0;
+  }
+
+  /* Gallery stacks */
+  .gallery_images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Wide tables become scrollable */
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  caption { white-space: normal; }
+
+  /* Video fits small screens */
+  figure video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*  2) Phones (<= 500px)  */
+@media (max-width: 500px) {
+  h1 { font-size: 1.3em; }
+  body { font-size: 0.95em; }
+
+  nav ul li a { padding: 10px; }
+
+  /* Submit button fills width */
+  form input[type="submit"] {
+    width: 100%;
+    padding: 0.95em 1.2em;
+  }
+
+  /* Slightly smaller side padding */
+  header, footer, article, main, .layout {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/*  3) Mobile hamburger (<= 800px)  */
+@media (max-width: 800px) {
+  /* Show a red "Menu" button */
+  .navicon-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e63946;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 8px 0;
+  }
+  .navicon-btn:hover { background: #c72d39; }
+  .navicon-btn img { width: 20px; height: 20px; display: block; }
+
+  /* Collapse the nav by default on mobile */
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* When toggled, show the menu */
+  body.nav-open header nav ul { display: flex; }
+}
+
+
