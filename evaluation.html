@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Design Evaluation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="images/logo.png" alt="Iron Fist Muay Thai" /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cross-reference.html">Cross-reference</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <h1>Design Evaluation</h1>
+      <p>Please rate each item from 1 (lowest) to 5 (highest) and leave any comments.</p>
+
+      <form action="#" method="post">
+        <label for="usefulness">Usefulness (1–5)</label>
+        <input id="usefulness" name="usefulness" type="number" min="1" max="5" required>
+
+        <label for="navigation">Ease of Navigation (1–5)</label>
+        <input id="navigation" name="navigation" type="number" min="1" max="5" required>
+
+        <label for="design">Design Quality (1–5)</label>
+        <input id="design" name="design" type="number" min="1" max="5" required>
+
+        <label for="content">Content Clarity (1–5)</label>
+        <input id="content" name="content" type="number" min="1" max="5" required>
+
+        <label for="comments">Other Comments</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <input type="submit" value="Submit Evaluation">
+      </form>
+    </article>
+
+    <footer>
+      Iron Fist Muay Thai &#8226; 123 Imaginary Street, Guelph ON A0A 0A0 &#8226; (123)-456-7890
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
